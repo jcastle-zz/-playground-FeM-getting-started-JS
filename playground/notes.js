@@ -75,3 +75,24 @@ for (let i = 0; i < students.length; i++) {
 for (let student of students) {
     console.log(`Hello ${student}`);
 }
+
+while (students.length > 0) {
+    let student = students.pop();
+    console.log(student);
+}
+
+/*
+Functions - contain a collection of statements and do something at specific time periods. Computer science term is a procedure.
+- `` used for interpolated strings.
+- Procedure does not give anything back.
+*/
+function greetStudent(student) {
+    console.log(`Hello ` + student);
+}
+greetStudent('Joe');
+
+function timeRemaining(timeElapsed, endTime) {
+    return endTime - timeElapsed;
+}
+var left = timeRemaining(42, 240);
+console.log(left);
